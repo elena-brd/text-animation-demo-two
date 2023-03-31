@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffe5d9;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.animated {
+    background: url('img/showcase-1.jpg') no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Display bg image on text */
+    color: transparent;
+    animation: bgDisplay 5s ease infinite;
+    -webkit-animation: bgDisplay 5s ease infinite;
+}
+
+@keyframes bgDisplay {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
